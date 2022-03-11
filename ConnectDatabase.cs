@@ -39,7 +39,7 @@ namespace WindowsFormsApp1
         public void connecttodatabase(string query2)
         {
             //εδω αποθηκευεται το connection string στο οποιο υπαρχει η συνδεση με τη βαση 
-            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\gfilippaios\Desktop\WindowsFormsApp1\WindowsFormsApp1\Database1.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\gfilippaios\source\repos\WindowsFormsApp1\WindowsFormsApp1\Database1.mdf;Integrated Security=True");
             //εδω γινεται η συνδεση του connection string και του query
             SqlDataAdapter sda = new SqlDataAdapter(query2, con);
             //δημιουργια πινακα για την αποθηκευση των  αποτελεσματων απο την συνδεση
